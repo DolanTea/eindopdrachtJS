@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamtaro game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- https://www.spriters-resource.com/game_boy_advance/hamtarohamhamheartbreak/ voor de afbeelding gevonden -->
+    <!-- https://favicon.io/favicon-converter/ voor de favicon converter zip file voor varianten -->
+    <!-- https://www.w3schools.com/html/html_favicon.asp voor de uitleg hoe je favicon in html linkt -->
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Take care of Hamtaro</h1>
+            <p>Tamagotchi & Pou inspired</p>
+            <img src="images/hamtaro.jpg" alt="Hamtaro" id="Hamtaro">
+        </section>
+
+        <section id="hamsterStatusSection">
+            <h2></h2>
+            <article id="hamsterStatus">
+                <h2>Status van Hamtaro</h2>
+                <p>Naam: Hamtaro</p>
+                <p>Energie: 50</p>
+                <p>Gezondheid: 100</p>
+                <p>Honger: 50</p>
+                <p>Blijheid: 50</p>
+            </article>
+            <button id="feedButton">Voeden</button>
+            <button id="sleepButton">Slapen</button>
+            <!-- ik krijg anders de resetButton niet in het midden nadat je de hamster overvoedt -->
+            <div id="resetButtonContainer">
+                <button id="resetButton">Nieuw leven starten</button>
+            </div>
+        </section>
+
+        <article class="spelletje">
+            <h2>Rock Paper Scissors</h2>
+            <button id="playButton">Spelen</button>
+            <section class="keuzes" id="keuzes">
+                <h2></h2>
+                <button class="keuze" id="steen">
+                    <img src="images/steen.jpeg" alt="hand in een 'steen' vorm">
+                </button>
+                <button class="keuze" id="papier">
+                    <img src="images/papier.jpeg" alt="hand open als 'papier' vorm">
+                </button>
+                <button class="keuze" id="schaar">
+                    <img src="images/schaar.jpeg" alt="peace sign hand als 'schaar' vorm">
+                </button>
+                <!-- image links, https://www.geeksforgeeks.org/rock-paper-scissor-game-python-project/ -->
+            </section>
+            <div id="resultaat"></div>
+        </article>
+    </main>
+    <script src="index.js" defer></script> <!-- Zorg ervoor dat je JS-bestand correct is gekoppeld -->
+</body>
+
+</html>
